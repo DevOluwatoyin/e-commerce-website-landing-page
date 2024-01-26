@@ -1,9 +1,21 @@
-import Image from "next/image";
+import About from "@/components/About";
+import Categories from "@/components/Categories";
+import Navbar from "@/components/Navbar";
+import Testimonials from "@/components/Testimonials";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      A new beginning
-    </main>
+    <>
+      <Navbar />
+      <main className="">
+        A new beginning
+        <Link href="/products">Products</Link>
+      </main>
+
+      <About />
+      <Categories />
+      <Testimonials />
+    </>
   );
 }
