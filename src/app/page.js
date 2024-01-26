@@ -10,6 +10,7 @@ export default function Home() {
       <Navbar />
       <main className="">
         A new beginning
+        <h1 className="text-5xl font-extrabold">I am the home</h1>
         <Link href="/products">Products</Link>
       </main>
 
