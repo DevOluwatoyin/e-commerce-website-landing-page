@@ -1,63 +1,80 @@
-// Import necessary modules
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import logo from "/public/logo.svg";
 import ham from "/public/icons/ham.svg";
 import close from "/public/icons/close.svg";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { useEffect } from "react";
+import { Link } from "next/link";
+import { navLinks } from "../constants/nav";
 
-// Navbar component
 const Navbar = () => {
-  const pathname = usePathname();
+  const [nav, navOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg p-3 md:flex md:items-center md:justify-between">
-      {/* Logo */}
-      <div className="flex items-center">
-        <Image src={logo} alt="Greenmind Logo" priority />
-        <Image src={ham} alt="Open Icon" priority className="md:hidden ml-4" />
-        <Image
-          src={close}
-          alt="Close Icon"
-          priority
-          className="md:hidden ml-4"
-        />
+    <header
+      className={`flex justify-between text-center w-full h-20 p-4 text-white bg-black fixed z-50 transition-all duration-500 ease-in-out ${
+        isScrolled ? "navbar-scroll" : ""
+      }`}
+    >
+      <Image src={logo} alt="Greenmind Logo" priority />
+
+      <nav className="hidden md:flex">
+        {navLinks.map(({ text, id }) => (
+          <Link
+            to={text}
+            smooth
+            duration={500}
+            key={id}
+            className="px-4 py-2 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:underline duration-200"
+          >
+            {text}
+          </Link>
+        ))}
+      </nav>
+
+      <div
+        onClick={() => navOpen(!nav)}
+        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+      >
+        {nav ? (
+          <Image src={close} alt="Greenmind Logo" priority />
+        ) : (
+          <Image src={ham} alt="Greenmind Logo" priority />
+        )}
       </div>
 
-      {/* Navbar Links */}
-      <nav className="md:flex hidden">
-        <ul className="flex space-x-4">
-          <Link
-            href="/"
-            className={`link ${
-              pathname === "/" ? "font-bold underline underline-offset-2" : ""
-            }`}
-          >
-            Home
-          </Link>
-          <Link
-            href="#about"
-            className={`link ${pathname === "/#about" ? "active" : ""}`}
-          >
-            About
-          </Link>
-          <Link
-            href="#categories"
-            className={`link ${pathname === "/#categories" ? "active" : ""}`}
-          >
-            Categories
-          </Link>
-          <Link
-            href="/products"
-            className={`link ${pathname === "/products" ? "active" : ""}`}
-          >
-            Products
-          </Link>
-        </ul>
-      </nav>
+      {nav && (
+        <nav className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-500 ">
+          {navLinks.map(({ id, text }) => (
+            <Link
+              to={text}
+              smooth
+              duration={500}
+              onClick={() => navOpen(!nav)}
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            >
+              {text}
+            </Link>
+          ))}
+        </nav>
+      )}
     </header>
   );
 };
