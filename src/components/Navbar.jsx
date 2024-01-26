@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="h-20"></div>
       <header
         className={`flex justify-between items-center text-center w-full top-0 h-20 p-4 text-black bg-white fixed z-50 transition-all duration-500 ease-in-out  ${
-          isScrolled ? "shadow-xl" : ""
+          isScrolled ? "shadow-3xl" : ""
         }`}
       >
         <Link href="/">
