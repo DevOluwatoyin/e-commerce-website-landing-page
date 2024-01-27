@@ -63,19 +63,14 @@ export const productCategories = [
   {
     image: natural2,
     name: "Natural Plants",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae animi error, nemo, veniam, nam illum officiis saepe tempora",
   },
   {
     image: accessory,
     name: "Plant Accessories",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae animi error, nemo, veniam, nam illum officiis saepe tempora",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu",
   },
   {
     image: artificial9,
     name: "Artificial Plants",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae animi error, nemo, veniam, nam illum officiis saepe tempora",
   },
 ];

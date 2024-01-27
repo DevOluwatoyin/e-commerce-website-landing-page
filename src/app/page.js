@@ -11,25 +11,27 @@ export default function Home() {
   return (
     <PublicLayout>
       <main className="bg-primary">
-        <div className="max-w-[1300px] mx-auto flex items-center justify-between flex-col p-4 md:flex-row pb-0">
-          <div className="space-y-8 text-center md:text-left">
-            <h1 className="text-[28px] font-extrabold max-w-lg sm:text-5xl md:text-[64px]">
+        <div className="max-w-[1300px] mx-auto flex justify-between flex-col p-4 md:flex-row pb-0">
+          <div className="space-y-8 text-center self-center py-4 md:text-left md:flex-1">
+            <h1 className="text-[28px] font-extrabold max-w-lg sm:text-5xl lg:text-[64px]">
               Buy your dream plants
             </h1>
             <div className="flex items-center justify-center gap-12 font-medium text-dark-two md:justify-start">
               <div>
-                <p className="text-xl md:text-[32px]">50+</p>
-                <p className="text-base md:text-lg">Plant Species</p>
+                <p className="text-xl lg:text-[32px]">50+</p>
+                <p className="text-base lg:text-lg">Plant Species</p>
               </div>
               <span className="w-[1px] h-16 bg-dark-two"></span>
               <div>
-                <p className="text-xl md:text-[32px]">100+</p>
-                <p className="text-base md:text-lg">Customers</p>
+                <p className="text-xl lg:text-[32px]">100+</p>
+                <p className="text-base lg:text-lg">Customers</p>
               </div>
             </div>
             <Button text="Products" bgColor="white" maxWidth="160px" />
           </div>
-          <Image src={heroImage} alt="hero image" />
+          <div className="flex items-end justify-center md:flex-1">
+            <Image src={heroImage} alt="hero image" />
+          </div>
         </div>
       </main>
 

@@ -22,7 +22,7 @@ const MobileNav = () => {
       </div>
 
       {nav && (
-        <nav className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#C1DCDC] to-gray-500 ">
+        <nav className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#C1DCDC] to-white ">
           {navlinks.map((item, id) => (
             <Link
               href={item.path}

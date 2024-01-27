@@ -6,11 +6,11 @@ const About = () => {
   return (
     <div
       id="about"
-      className="scroll-mt-20 text-center max-w-[1300px] mx-auto px-8 my-20"
+      className="scroll-mt-20 text-center max-w-[1300px] mx-auto px-8 pt-10 mb-20"
     >
       <h3 className="text-[32px] font-bold">About us</h3>
       <p className="text-sm font-medium text-gray-light mt-3 mb-12 md:text-lg">
-        Order now and appreciate the beauty of nature
+        Order now and appreciate the beauty of nature.
       </p>
       <div className="flex justify-between flex-col items-center gap-4 flex-wrap md:flex-row">
         {features.map((feature, id) => (

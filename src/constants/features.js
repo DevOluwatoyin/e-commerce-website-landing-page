@@ -7,7 +7,7 @@ export const features = [
     image: feature1,
     title: "Large Assortment",
     description:
-      "we offer many different types of products with fewer variations in each category.",
+      "We offer many different types of products with fewer variations in each category.",
   },
   {
     image: feature2,
@@ -19,6 +19,6 @@ export const features = [
     image: feature3,
     title: "24/7 Support",
     description:
-      "answers to any business related inquiry 24/7 and in real-time.",
+      "Answers to any business related inquiry 24/7 and in real-time.",
   },
 ];
