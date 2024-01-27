@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <PublicLayout>
       <main className="bg-primary">
-        <div className="max-w-[1300px] mx-auto flex justify-between flex-col p-4 md:flex-row pb-0">
+        <div className="max-w-[1300px] mx-auto flex justify-between flex-col py-4 pb-0 md:px-8 md:flex-row xl:px-4">
           <div className="space-y-8 text-center self-center py-4 md:text-left md:flex-1">
             <h1 className="text-[28px] font-extrabold max-w-lg sm:text-5xl lg:text-[64px]">
               Buy your dream plants
@@ -35,7 +35,9 @@ export default function Home() {
               role="call to action"
             />
           </div>
-          <Image src={heroImage} alt="hero image" className="md:flex-1" />
+          <div className="md:self-end md:flex-1">
+            <Image src={heroImage} alt="hero image" />
+          </div>
         </div>
       </main>
 

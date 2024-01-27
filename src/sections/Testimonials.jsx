@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   return (
     <section className="scroll-mt-20 pt-10 mb-20">
-      <div className="md:max-w-[1300px] mx-auto px-4 space-y-10">
+      <div className="md:max-w-[1300px] mx-auto px-4 space-y-10 md:px-10 xl:px-4">
         <h3 className="font-bold text-xl md:text-2xl">
           What customers say about
           <br /> GREEMIND?
