@@ -35,9 +35,7 @@ export default function Home() {
               role="call to action"
             />
           </div>
-          <Link href="/" aria-label="Greenmind home page">
-            <Image src={heroImage} alt="hero image" />
-          </Link>
+          <Image src={heroImage} alt="hero image" className="md:flex-1" />
         </div>
       </main>
 

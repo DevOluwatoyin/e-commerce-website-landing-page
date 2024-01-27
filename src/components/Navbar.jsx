@@ -30,7 +30,7 @@ const Navbar = () => {
           isScrolled ? "shadow-3xl" : ""
         }`}
       >
-        <Link href="/">
+        <Link href="/" aria-label="Greenmind home page">
           <Image src={logo} alt="Greenmind Logo" />
         </Link>
 
