@@ -28,7 +28,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-between text-dark-two flex-wrap capitalize gap-5 lg:gap-10">
+        <div className="flex justify-center text-dark-two flex-wrap capitalize gap-5 lg:gap-10">
           {footerLinks.map((links, id) => (
             <Link
               key={id}
