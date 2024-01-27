@@ -15,9 +15,9 @@ const MobileNav = () => {
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
       >
         {nav ? (
-          <Image src={close} alt="Greenmind Logo" priority />
+          <Image src={close} alt="close" />
         ) : (
-          <Image src={ham} alt="Greenmind Logo" priority />
+          <Image src={ham} alt="open" />
         )}
       </div>
 

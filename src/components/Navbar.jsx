@@ -31,7 +31,7 @@ const Navbar = () => {
         }`}
       >
         <Link href="/">
-          <Image src={logo} alt="Greenmind Logo" priority />
+          <Image src={logo} alt="Greenmind Logo" />
         </Link>
 
         <DesktopNav />
