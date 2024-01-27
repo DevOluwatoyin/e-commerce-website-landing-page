@@ -67,7 +67,8 @@ export const productCategories = [
   {
     image: accessory,
     name: "Plant Accessories",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu",
+    description:
+      "Enhance the beauty of your green companions with our plant accessories",
   },
   {
     image: artificial9,

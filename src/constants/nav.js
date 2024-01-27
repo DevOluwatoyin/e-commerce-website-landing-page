@@ -38,3 +38,22 @@ export const socialLinks = [
     path: "https://www.instagram.com/",
   },
 ];
+
+export const footerLinks = [
+  {
+    text: "home",
+    path: "/",
+  },
+  {
+    text: "about",
+    path: "#about",
+  },
+  {
+    text: "contact",
+    path: "#",
+  },
+  {
+    text: "terms of service",
+    path: "#",
+  },
+];
