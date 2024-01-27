@@ -5,6 +5,7 @@ import { footerLinks, socialLinks } from "@/constants/nav";
 import Link from "next/link";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <section className="bg-primary py-10">
       <div className="max-w-[1300px] mx-auto bg-primary flex flex-col justify-between items-center space-y-5 px-4 md:space-y-0 md:flex-row lg:px-0">
@@ -16,6 +17,7 @@ const Footer = () => {
           <div className="flex items-center justify-center md:justify-normal gap-4">
             {socialLinks.map((social, id) => (
               <Link
+                key={id}
                 href={social.path}
                 target="_blank"
                 rel="no referrer"
@@ -27,16 +29,20 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between text-dark-two flex-wrap capitalize gap-5 lg:gap-10">
-          {footerLinks.map((link, id) => (
+          {footerLinks.map((links, id) => (
             <Link
-              href={link.path}
+              key={id}
+              href={links.path}
               className="hover:underline hover:underline-offset-4 hover:font-light transition-all "
             >
-              {link.text}
+              {links.text}
             </Link>
           ))}
         </div>
       </div>
+      <small className="text-center block">
+        &copy; {year} all Right Reserved by GREENMIND
+      </small>
     </section>
   );
 };

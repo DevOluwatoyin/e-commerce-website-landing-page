@@ -7,3 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.notFound{
+  height: calc(100vh - 284px);
+}

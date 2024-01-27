@@ -14,7 +14,10 @@ const Categories = () => {
       <div className="bg-primary px-8 pt-10 pb-14 text-dark-two space-y-6">
         <div className="max-w-[1300px] mx-auto flex flex-col items-center justify-center gap-20 md:flex-row">
           {productCategories.map((product, id) => (
-            <div className="flex flex-col items-center justify-center space-y-2 group">
+            <div
+              key={id}
+              className="flex flex-col items-center justify-center space-y-2 group"
+            >
               <Image
                 src={product.image}
                 alt={product.name}
