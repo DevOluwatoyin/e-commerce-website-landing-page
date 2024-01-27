@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { links } from "../constants/nav";
+import { navlinks } from "../constants/nav";
 import ham from "/public/icons/ham.svg";
 import close from "/public/icons/close.svg";
 import Image from "next/image";
@@ -23,7 +23,7 @@ const MobileNav = () => {
 
       {nav && (
         <nav className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#C1DCDC] to-gray-500 ">
-          {links.map((item, id) => (
+          {navlinks.map((item, id) => (
             <Link
               href={item.path}
               key={id}

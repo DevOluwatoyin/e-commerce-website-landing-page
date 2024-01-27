@@ -5,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 import heroImage from "/public/images/hero-img.png";
 import Button from "@/components/Button";
+import BestSelling from "@/sections/BestSelling";
 
 export default function Home() {
   return (
@@ -26,12 +27,13 @@ export default function Home() {
                 <p className="text-base md:text-lg">Customers</p>
               </div>
             </div>
-            <Button text="Products" bgColor="white" />
+            <Button text="Products" bgColor="white" maxWidth="160px" />
           </div>
           <Image src={heroImage} alt="hero image" />
         </div>
       </main>
 
+      <BestSelling />
       <About />
       <Categories />
       <Testimonials />

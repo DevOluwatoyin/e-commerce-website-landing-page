@@ -10,8 +10,6 @@ const page = () => {
         Products!!!!!!!!!!!!!!
         <Link href="/"> Go back</Link>
       </div>
-
-     
     </PublicLayout>
   );
 };

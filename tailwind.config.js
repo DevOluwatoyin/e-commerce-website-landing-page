@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         primary: "#C1DCDC",
         "dark-two": "#1E1E1E",
+        "gray-light": "rgba(30, 30, 30, 0.50)",
       },
       boxShadow: {
         "3xl": "0px 4px 4px #C1DCDC;",

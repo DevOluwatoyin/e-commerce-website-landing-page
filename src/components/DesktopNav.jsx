@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { links } from "../constants/nav";
+import { navlinks } from "../constants/nav";
 
 const DesktopNav = () => {
   return (
     <nav className="hidden md:flex">
-      {links.map((item, id) => (
+      {navlinks.map((item, id) => (
         <Link
           href={item.path}
           key={id}

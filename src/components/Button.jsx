@@ -3,15 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 import arrowRight from "/public/icons/arrow-right.svg";
 
-const Button = ({ text, bgColor }) => {
+const Button = ({ text, bgColor, maxWidth }) => {
   return (
     <Link
       href="/products"
-      className="rounded-lg overflow-hidden inline-block group hover:transition-all max-w-[160px]"
+      className="rounded-lg overflow-hidden inline-block group hover:transition-all"
+      style={{
+        maxWidth: maxWidth,
+      }}
     >
       <button
         className="text-lg flex items-center gap-2 px-6 py-3 hover:transition ease-in-out text-dark-two font-medium group-hover:tracking-wider"
-        style={{ backgroundColor: bgColor }}
+        style={{
+          backgroundColor: bgColor,
+          maxWidth: maxWidth,
+        }}
       >
         <span>{text}</span>
         <Image
