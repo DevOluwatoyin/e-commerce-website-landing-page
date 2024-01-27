@@ -13,9 +13,11 @@ const ProductCard = ({ image, name, price }) => {
       <div className="flex items-center justify-center gap-3 flex-col lg:flex-row">
         <p className="flex flex-col gap-1">
           <span className="font-bold text-sm lg:text-base">{name}</span>
-          <span className="text-gray-light text-xs lg:text-sm">{price}</span>
+          <span className="text-gray-light font-light text-xs lg:text-sm">
+            {price}
+          </span>
         </p>
-        <Button text="Buy now" bgColor="white" border="2px solid #C1DCDC" maxWidth="134px" />
+        <Button text="Buy now" />
       </div>
     </div>
   );

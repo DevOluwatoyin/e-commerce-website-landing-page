@@ -5,6 +5,7 @@ import Testimonials from "@/sections/Testimonials";
 import Image from "next/image";
 import heroImage from "/public/images/hero-img.png";
 import Button from "@/components/Button";
+import Link from "next/link";
 import BestSelling from "@/sections/BestSelling";
 
 export default function Home() {
@@ -30,13 +31,12 @@ export default function Home() {
             <Button
               text="Products"
               bgColor="white"
-              maxWidth="160px"
-              icon={true}
+              link={true}
             />
           </div>
-          <div className="flex items-end justify-center md:flex-1">
+          <Link href="/" aria-label="Greenmind home page">
             <Image src={heroImage} alt="hero image" />
-          </div>
+          </Link>
         </div>
       </main>
 

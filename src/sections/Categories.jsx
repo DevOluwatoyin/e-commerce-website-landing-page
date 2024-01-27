@@ -7,11 +7,11 @@ const Categories = () => {
   return (
     <section id="categories" className="scroll-mt-20 text-center pt-10 mb-20">
       <h3 className="text-[32px] font-bold">Categories</h3>
-      <p className="text-sm font-medium text-gray-light mt-3 mb-12 md:text-lg">
+      <p className="text-sm text-gray-light font-light mt-3 mb-12 md:text-lg">
         Find what you are looking for
       </p>
 
-      <div className="bg-primary px-8 pt-10 pb-14 text-dark-two space-y-6">
+      <div className="bg-primary px-8 pt-10 pb-14 text-dark-two space-y-6 text-center flex flex-col items-center">
         <div className="max-w-[1300px] mx-auto flex flex-col items-center justify-center gap-20 md:flex-row">
           {productCategories.map((product, id) => (
             <div
@@ -24,13 +24,13 @@ const Categories = () => {
                 className="group-hover:opacity-80 transition-opacity cursor-pointer"
               />
               <p className="text-base font-bold md:text-lg">{product.name}</p>
-              <p className="text-base font-medium text-gray-light md:text-lg">
+              <p className="text-base text-gray-light font-light md:text-lg">
                 {product.description}
               </p>
             </div>
           ))}
         </div>
-        <Button bgColor="#ffffff" text="Explore" maxWidth="150px" icon={true} />
+        <Button bgColor="#ffffff" text="Explore" link={true} />
       </div>
     </section>
   );
