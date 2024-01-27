@@ -12,9 +12,9 @@ const Testimonials = () => {
         <div className="flex items-center flex-col justify-center bg-primary p-4 rounded-xl shadow-2xl space-y-5 max-w-lg mx-auto">
           <p className=" font-medium lg:text-lg">
             Exceptional service! I recently purchased a variety of plants and
-            plants accessories from this wonderful business, and I couldn't be
-            more pleased. The quality of their artificial plants is unmatched,
-            providing a lifelike and vibrant addition to my home.
+            plants accessories from this wonderful business, and I couldn&apos;t
+            be more pleased. The quality of their artificial plants is
+            unmatched, providing a lifelike and vibrant addition to my home.
           </p>
           <div className="text-center">
             <p className="font-bold md:text-lg">Jane Doe</p>

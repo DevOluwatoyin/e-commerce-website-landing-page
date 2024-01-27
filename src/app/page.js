@@ -32,6 +32,7 @@ export default function Home() {
               text="Products"
               bgColor="white"
               link={true}
+              role="call to action"
             />
           </div>
           <Link href="/" aria-label="Greenmind home page">
