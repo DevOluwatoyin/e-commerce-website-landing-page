@@ -6,9 +6,10 @@ import artificial4 from "/public/images/plant-5.png";
 import artificial5 from "/public/images/plant-6.png";
 import artificial6 from "/public/images/plant-7.png";
 import artificial7 from "/public/images/plant-8.png";
+import artificial8 from "/public/images/plant-9.png";
 import natural2 from "/public/images/cat-1.png";
 import accessory from "/public/images/cat-2.png";
-import artificial8 from "/public/images/cat-3.png";
+import artificial9 from "/public/images/cat-3.png";
 
 export const allPlants = [
   {
@@ -51,6 +52,11 @@ export const allPlants = [
     name: "Artificial and",
     price: "N 3,500",
   },
+  {
+    image: artificial8,
+    name: "Artificial and",
+    price: "N 3,500",
+  },
 ];
 
 export const productCategories = [
@@ -67,7 +73,7 @@ export const productCategories = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae animi error, nemo, veniam, nam illum officiis saepe tempora",
   },
   {
-    image: artificial8,
+    image: artificial9,
     name: "Artificial Plants",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae animi error, nemo, veniam, nam illum officiis saepe tempora",

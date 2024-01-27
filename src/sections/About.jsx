@@ -10,8 +10,8 @@ const About = () => {
       <p>Order now and appreciate the beauty of nature</p>
       <div className="flex justify-between items-center gap-4">
         {features.map((feature, id) => (
-          <div>
-            <Image src={feature.image} alt="hero image" />
+          <div key={id}>
+            <Image src={feature.image} alt={feature.title} />
             <p>{ feature.title}</p>
             <p>{ feature.description}</p>
           </div>

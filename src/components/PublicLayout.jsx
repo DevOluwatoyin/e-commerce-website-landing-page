@@ -6,7 +6,6 @@ const PublicLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-
       {children}
       <Footer />
     </>
