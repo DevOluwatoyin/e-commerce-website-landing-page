@@ -23,38 +23,33 @@ export const allPlants = [
     price: "N 900",
   },
   {
-    image: artificial2,
-    name: "Artificial Plants",
-    price: "N 3,500",
-  },
-  {
     image: artificial3,
-    name: "Artificial and",
+    name: "Lush Green Delight",
     price: "N 3,500",
   },
   {
     image: artificial4,
-    name: "Artificial and",
+    name: "Elegance",
     price: "N 3,500",
   },
   {
     image: artificial5,
-    name: "Artificial and",
+    name: "Serenity Fern",
     price: "N 3,500",
   },
   {
     image: artificial6,
-    name: "Artificial and",
+    name: "Botanic Bliss",
     price: "N 3,500",
   },
   {
     image: artificial7,
-    name: "Artificial and",
+    name: "Tranquil Verdancy",
     price: "N 3,500",
   },
   {
     image: artificial8,
-    name: "Artificial and",
+    name: "Radiant Faux",
     price: "N 3,500",
   },
 ];
