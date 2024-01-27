@@ -27,7 +27,12 @@ export default function Home() {
                 <p className="text-base lg:text-lg">Customers</p>
               </div>
             </div>
-            <Button text="Products" bgColor="white" maxWidth="160px" />
+            <Button
+              text="Products"
+              bgColor="white"
+              maxWidth="160px"
+              icon={true}
+            />
           </div>
           <div className="flex items-end justify-center md:flex-1">
             <Image src={heroImage} alt="hero image" />

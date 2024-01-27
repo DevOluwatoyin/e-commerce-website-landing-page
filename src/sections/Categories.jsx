@@ -30,7 +30,7 @@ const Categories = () => {
             </div>
           ))}
         </div>
-        <Button bgColor="#ffffff" text="Explore" maxWidth="150px" />
+        <Button bgColor="#ffffff" text="Explore" maxWidth="150px" icon={true} />
       </div>
     </section>
   );

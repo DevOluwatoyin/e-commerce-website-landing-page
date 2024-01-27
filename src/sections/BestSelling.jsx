@@ -12,7 +12,12 @@ const BestSelling = () => {
         <p className="lg:text-lg text-gray-light">
           Easiest way to healthy life by buying your favorite plants{" "}
         </p>
-        <Button text="See more" bgColor="#C1DCDC" maxWidth="175px" />
+        <Button
+          text="See more"
+          bgColor="#C1DCDC"
+          maxWidth="175px"
+          icon={true}
+        />
       </div>
       <div className="flex justify-between items-center flex-wrap flex-col gap-10 md:flex-row">
         {plants.map((plant, id) => (

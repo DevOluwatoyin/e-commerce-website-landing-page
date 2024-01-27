@@ -1,11 +1,16 @@
 import React from 'react'
+import Image from "next/image";
 
-const ProductCard = ({image, name}) => {
+
+const ProductCard = ({image, name,price}) => {
   return (
     <div>
-      working...
+      <Image src={image} alt="greenmind" />
+      <div>
+        <p></p>
+      </div>
     </div>
-  )
+  );
 }
 
 export default ProductCard

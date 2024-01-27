@@ -9,11 +9,11 @@ export const navlinks = [
   },
   {
     text: "about us",
-    path: "#about",
+    path: "/#about",
   },
   {
     text: "categories",
-    path: "#categories",
+    path: "/#categories",
   },
   {
     text: "products",
@@ -46,14 +46,14 @@ export const footerLinks = [
   },
   {
     text: "about",
-    path: "#about",
+    path: "/#about",
   },
   {
     text: "contact",
-    path: "#",
+    path: "/#",
   },
   {
     text: "terms of service",
-    path: "#",
+    path: "/#",
   },
 ];
